@@ -46,3 +46,17 @@ class BinaryTree(Tree):
             self.postorderTraversal(binary_tree.left)
             self.postorderTraversal(binary_tree.right)
             print(binary_tree.value, end="  ")
+
+
+    def levelorderTraversal(self, binary_tree):
+        pass
+
+
+    def getHeight(self, binary_tree):
+
+        if binary_tree == None:
+            return 0
+        else:
+            h = max(self.getHeight(binary_tree.left) + 1, self.getHeight(binary_tree.right) + 1)
+            return h
+
