@@ -49,7 +49,21 @@ class BinaryTree(Tree):
 
 
     def levelorderTraversal(self, binary_tree):
-        pass
+        level = self.getHeight(binary_tree)
+        for i in range(1, level+1):
+            BinaryTree.__printGivenLevel(binary_tree, i)
+            print()
+
+
+    @staticmethod
+    def __printGivenLevel(binary_tree, level):
+        if binary_tree == None:
+            return
+        if level == 1:
+            print(binary_tree.value, end=" ")
+        elif level > 1:
+            BinaryTree.__printGivenLevel(binary_tree.left, level - 1)
+            BinaryTree.__printGivenLevel(binary_tree.right, level - 1)
 
 
     def getHeight(self, binary_tree):

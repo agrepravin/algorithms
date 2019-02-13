@@ -17,3 +17,6 @@ print("\nPostorder Tree Traversal")
 b.postorderTraversal(bt)
 height = b.getHeight(bt)
 print(height)
+
+
+b.levelorderTraversal(bt)
