@@ -1,5 +1,5 @@
-from SegmentTree import SegmentTree
-from BinaryTree import BinaryTree
+from Tree.SegmentTree import SegmentTree
+from Tree.BinaryTree import BinaryTree
 
 st = SegmentTree([1,3,2,-2,4,5], 'min')
 print(st)

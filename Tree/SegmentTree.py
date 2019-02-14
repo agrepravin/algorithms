@@ -7,7 +7,7 @@
 
 ### Maximum array size required to build a tree of n i.e. (2 * (2 ** log n base 2 )) - 1 ==> (4 * n) + 1
 
-from Tree import Tree
+from Tree.Tree import Tree
 
 class SegmentTree(Tree):
     def __init__(self, arr, type='sum'):
