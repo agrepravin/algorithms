@@ -27,4 +27,5 @@ from Sorting.MergeSort import MergeSort
 arr = [12, 11, 13, 5, 6, 7]
 s = MergeSort(arr)
 s.sort()
+s.printArray()
 print(s)

@@ -11,10 +11,10 @@ class Sorting(ABC):
         pass
 
 
-    def printArray(arr):
+    def printArray(self):
         """ If array is sorted will print sorted array or else as it is"""
-        for i in range(len(arr)):
-            print(arr[i], end=" ")
+        for i in range(len(self.arr)):
+            print(self.arr[i], end=" ")
         print()
 
 
